@@ -22,4 +22,5 @@ jobs:
           dotnet-version: 8.0.x
       - run: npm ci --ignore-scripts
       - run: npm test
-      - run: dotnet build src/Lib/Lib.csproj --locked-mode
+      - run: dotnet restore src/Lib/Lib.csproj --locked-mode
+      - run: dotnet build src/Lib/Lib.csproj --no-restore
