@@ -45,7 +45,7 @@ jobs:
           persist-credentials: false
 
       - id: lookup
-        uses: MintPlayer/MintPlayer.Spark/apps/CodeCoverage/dependency-action@bfd709a9bf088fc45190e5f49da779129bb9ff45 # dependency-update-v1
+        uses: MintPlayer/MintPlayer.Spark/apps/CodeCoverage/dependency-action@e39b16dee7491aa8fc8e36cfe4b3ced567c86e95 # dependency-update-v1
         with:
           mode: lookup
           expected-sha: ${{ inputs.expected_sha }}
